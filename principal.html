@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Insert title here</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+        $(function() {
+            $('.content').height($('.content').height() + $('.footer').height());
+            window.scrollTo(0, 1);
+        });
+        </script>
+    </head>
+    <body>
+        <div id="pgPrincipal" class="page">
+            <div class="header"><h1>Mis tareas</h1> </div>
+            <div class="content">
+                <ul class="lista-tarea">
+                    <li>Tarea 1</li>
+                    <li>Tarea 2</li>
+                    <li>Tarea 3</li>
+                    <li>Tarea 4</li>
+                    <li>Tarea 5</li>
+                    <li>Tarea 6</li>
+                    <li>Tarea 7</li>
+                    <li>Tarea 8</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <a id="btNuevaTarea" class="boton" href="#">Nueva tarea</a>
+                <a id="btTodasTarea" class="boton" href="#">Todas las tareas</a>
+            </div>
+        </div>
+    </body>
+</html>
