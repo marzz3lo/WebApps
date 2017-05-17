@@ -6,6 +6,7 @@ body {
 .page {
     margin: 0 6px 0 6px;
     height: 100%;
+    display: none;
 }
 
 
@@ -116,4 +117,42 @@ input[type="text"] {
     font-size: 1.05em;
     margin: 10px auto;
     padding: 10px;
+}
+
+ul.filtros {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.filtros li {
+    margin: 10px 0;
+}
+
+input[type="datetime"] {
+    width: 100%;
+    display: block;
+    font-size: 1.05em;
+}
+
+.lista-tarea li.pendiente {
+    background-color: tomato;
+    border: solid 2px tomato;
+}
+
+.lista-tarea li.completada {
+    background-color: lightgreen;
+    border: solid 2px lightgreen;
+}
+
+p.pendiente {
+    padding: 10px;
+    background-color: tomato;
+    border: solid 2px tomato;
+}
+
+p.completada {
+    padding: 10px;
+    background-color: lightgreen;
+    border: solid 2px lightgreen;
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Insert title here</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+        $(function() {
+            $('.content').height($('.content').height() + $('.footer').height());
+            window.scrollTo(0, 1);
+        });
+        </script>
+    </head>
+    <body>
+        <div id="pgEditarTarea" class="page">
+            <div class="header"><h1>Mis tareas</h1> </div>
+            <div class="content">
+                <fieldset>
+                    <legend>Tarea 1</legend>
+                    <p class="pendiente">Pendiente</p>
+                    <p class="pendiente">03/11/2015</p>
+                </fieldset>
+            </div>
+            <div class="footer">
+                <a id="btCompletar" class="boton" href="#">Completar</a>
+                <a id="btEliminar" class="boton" href="#">Eliminar</a>
+            </div>
+        </div>
+    </body>
+</html>
